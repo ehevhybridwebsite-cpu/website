@@ -461,20 +461,14 @@ a {
 }
 
 .portfolio-grid {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
     padding-bottom: 2rem;
-    scrollbar-width: none;
-}
-.portfolio-grid::-webkit-scrollbar {
-    display: none;
 }
 
 .portfolio-item {
-    flex: 0 0 780px;
-    scroll-snap-align: center;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: var(--white);
@@ -501,7 +495,7 @@ a {
     border-radius: 8px;
 }
 
-.video-container iframe {
+.video-container iframe, .video-container video {
     position: absolute;
     top: 0;
     left: 0;
@@ -1323,21 +1317,6 @@ a {
     .location-details-row {
         flex-direction: column;
         gap: 2rem;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-/* Support/Question Section Styles */
-.support-section {
-    padding: 6rem 2rem;
-    background-color: var(--white);
-    text-align: center;
-}
-
-.support-container {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .support-title {

@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Auto Carousels with Dots
-    const carousels = document.querySelectorAll('.portfolio-grid, .reviews-grid');
+    const carousels = document.querySelectorAll('.reviews-grid');
     
     carousels.forEach(grid => {
         // Create dots container
