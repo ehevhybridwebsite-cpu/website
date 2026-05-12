@@ -495,7 +495,7 @@ a {
     border-radius: 8px;
 }
 
-.video-container iframe, .video-container video {
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -1270,7 +1270,7 @@ a {
 
 @media (max-width: 768px) {
     .portfolio-item {
-        flex: 0 0 85%;
+        width: 100%;
     }
     .review-card {
         flex: 0 0 85%;
@@ -1317,6 +1317,21 @@ a {
     .location-details-row {
         flex-direction: column;
         gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Support/Question Section Styles */
+.support-section {
+    padding: 6rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.support-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .support-title {
